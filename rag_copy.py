@@ -1,5 +1,5 @@
 # pip install -U langchain langchain-openai langchain-community faiss-cpu pypdf python-dotenv langsmith
-
+import math
 import os
 import json
 import hashlib
@@ -146,3 +146,8 @@ if __name__ == "__main__":
     q = input("\nQ: ").strip()
     ans = setup_pipeline_and_query(PDF_PATH, q)
     print("\nA:", ans)
+
+# Example usage:
+# 1. Run the script: python rag_copy.py 
+# 2. Ask a question about the PDF content when prompted.    
+print("PDF RAG ready. Ask a question (or Ctrl+C to exit).")
